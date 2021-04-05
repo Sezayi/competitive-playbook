@@ -1,4 +1,5 @@
 import { tw, css } from 'twind/css';
+import Link from 'next/link'
 import Button from '@/components/button';
 import Netlify from '@/constants/svg/netlify.svg';
 import Nike from '@/constants/svg/nike.svg';
@@ -22,7 +23,9 @@ const Header = () => (
         </p>
       </div>
       <div className={tw(`mt-16 flex justify-center items-center w-full mx-auto `)}>
+      <Link href="/form">
         <Button primary>Join course</Button>
+        </Link>
         <span className={tw(`mx-4`)}>or</span>
         <Button>Contact us</Button>
       </div>

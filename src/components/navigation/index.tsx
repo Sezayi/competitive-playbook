@@ -1,4 +1,5 @@
 import { tw } from 'twind';
+import Link from 'next/link'
 import { useState } from 'react';
 import Button from '@/components/button';
 
@@ -38,11 +39,12 @@ const secondaryLinks = [
   },
   {
     label: `Get Started`,
-    href: `/`,
+    href: `/form`,
   },
 ];
 
 const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
+ 
   <button
     type="button"
     aria-controls="mobile-menu"
@@ -50,6 +52,7 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
     onClick={toggleMenu}
     className={tw(`p-2 text-gray-400`)}
   >
+    
     <span className={tw(`sr-only`)}>Open menu</span>
     {showMenu ? (
       <svg
@@ -79,6 +82,7 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
       </svg>
     )}
   </button>
+
 );
 
 const MobileMenu = () => (
@@ -116,7 +120,11 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
+            <Link href="/">
+              <a>
               <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              </a>
+              </Link>
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
@@ -134,7 +142,9 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
+            <Link href="/form">
               <Button primary>Join course</Button>
+              </Link>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
