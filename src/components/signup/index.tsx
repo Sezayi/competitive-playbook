@@ -14,6 +14,8 @@ const SignUp = () => (
           Koop hier het papa handboek
         </p>
       </div>
+      <form method="post" action="/api/hello">
+
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
         <div className={tw(`w-full lg:w-1/2 px-8`)}>
           <div className={tw(`w-full lg:w-full mt-12 lg:mt-0`)}>
@@ -24,6 +26,7 @@ const SignUp = () => (
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <input
+                      name="full_name"
                     aria-label="full name"
                     type="text"
                     className={tw(
@@ -39,6 +42,7 @@ const SignUp = () => (
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <input
+                      name="email"
                     aria-label="email address"
                     type="text"
                     className={tw(
@@ -80,12 +84,13 @@ const SignUp = () => (
                     <option value="papa handboek" selected>
                     Het papa handboek
                     </option>
-          
+
                   </select>
                 </div>
               </div>
 
-              <Button primary modifier="mt-2">Betaal met iDeal</Button>
+              <input type="submit" value="Betaal met iDeal"/>
+              {/*<Button primary modifier="mt-2">Betaal met iDeal</Button>*/}
             </div>
           </div>
         </div>
@@ -100,6 +105,7 @@ const SignUp = () => (
           </div>
         </div>
       </div>
+      </form>
     </div>
   </section>
 );
