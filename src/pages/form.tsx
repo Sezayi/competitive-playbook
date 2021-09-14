@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <Page>
       <NextSeo
-        title="Growthhacking workshops"
-        description="Beat the competition with these growthhacking workshops"
+        title="Papa Handboek"
+        description="Alle praktische tips en trucs voor nieuwe vaders"
       />
       <main>
         <SignUp />

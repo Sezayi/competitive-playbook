@@ -12,7 +12,7 @@ const PlayButton = () => (
     aria-label="play video"
   >
     <Play className={tw(`w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0`)} />
-    <span className={tw(`ml-3`)}>Watch the video (5 min)</span>
+    <span className={tw(`ml-3`)}>Bekijk de video (5 min)</span>
   </button>
 );
 
@@ -22,7 +22,10 @@ const VideoSection = () => (
       <div className={tw(`flex flex-col max-w-4xl mx-auto pt-28`)}>
         <div className={tw(`w-full`)}>
           <div className={tw(`relative shadow-2xl mx-6 lg:mx-0`)}>
-            <Preferences width="100%" height="100%" />
+          <img
+            src="/images/intro-video-thumbnail.jpg"
+            width="100%" height="100%"
+          />
             <PlayButton />
           </div>
         </div>

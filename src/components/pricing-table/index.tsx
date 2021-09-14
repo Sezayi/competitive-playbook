@@ -3,14 +3,11 @@ import Check from '@/constants/svg/check.svg';
 import Button from '@/components/button';
 
 const features = [
-  `Laboris nulla`,
-  `Lorem pariatur nisi`,
-  `Id aute amet pariatur`,
-  `Do duis sint aliquip`,
-  `Nostrud duis tempor`,
-  `Consequat eiusmod`,
-  `Reprehenderit`,
-  `Adipisicing reprehenderit`,
+  `Praktische video's voor elke fase`,
+  `Anekdotes en praktijkervaringen`,
+  `Een geupdate lijst met alle papa gear`,
+  `Tips uit een community van vaders `,
+  `Toegang tot de nieuwe papa's slack`,
 ];
 
 const PricingTable = () => (
@@ -18,11 +15,9 @@ const PricingTable = () => (
     <div className={tw(`relative max-w-7xl mx-auto mb-24`)}>
       <div className={tw(`overflow-hidden lg:max-w-none lg:flex`)}>
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
-          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Are you ready?</h2>
+          <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Klaar voor het vaderschap?</h2>
           <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>
-            Lorem id ullamco pariatur eiusmod labore qui deserunt incididunt deserunt nostrud. Tempor duis in
-            adipisicing exercitation ipsum nostrud esse. Reprehenderit cupidatat sint est deserunt id eiusmod amet
-            aliqua officia.
+            Als eerst, gefeliciteerd! Je bent waarschijnlijk op deze pagina terecht gekomen omdat jezelf, of een naaste, vader wordt. Super leuk, maar ook spannend! Geen zorgen. Deze cursus helpt je op weg en levert je praktische info vor het vaderschap.
           </p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
@@ -32,7 +27,7 @@ const PricingTable = () => (
                 tracking-wider font-semibold uppercase text-indigo-600`,
                 )}
               >
-                What is included
+                Wat je allemaal krijgt
               </h3>
               <div className={tw(`flex-1 border-t-2 border-gray-200`)} />
             </div>
@@ -54,12 +49,12 @@ const PricingTable = () => (
             lg:flex lg:flex-col lg:justify-center lg:p-12`,
           )}
         >
-          <p className={tw(`text-lg font-medium text-gray-800`)}>If you order now...</p>
+          <p className={tw(`text-lg font-medium text-gray-800`)}>Bestel het handboek, inclusief cursus</p>
           <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>
-            $99/mo
+            €49,-
           </div>
           <Button primary modifier="mt-6">
-            Save your seat
+            Nu kopen
           </Button>
         </div>
       </div>

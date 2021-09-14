@@ -29,8 +29,12 @@
   },
   "dependencies": {
     "@fontsource/inter": "4.2.1",
+    "@next-auth/prisma-adapter": "^0.5.3",
+    "@prisma/client": "^2.27.0",
     "@svgr/webpack": "5.5.0",
-    "next": "10.0.7",
+    "caniuse-lite": "^1.0.30001247",
+    "next": "^11.0.1",
+    "next-auth": "^3.24.0-canary.0",
     "next-seo": "4.20.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -59,6 +63,7 @@
     "husky": "5.0.9",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1",
+    "prisma": "^2.27.0",
     "typescript": "4.1.5"
   },
   "config": {

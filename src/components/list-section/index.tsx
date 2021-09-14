@@ -3,19 +3,19 @@ import FeatureSvg from '@/constants/svg/growthhacking.svg';
 
 const listItems = [
   {
-    title: `Build`,
+    title: `Voor de geboorte`,
     description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
     excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
     Deserunt nisi sit.`,
   },
   {
-    title: `Measure`,
+    title: `Tijdens de bevalling`,
     description: `Pariatur consectetur laboris exercitation duis laboris.
     Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
     tempor tempor.`,
   },
   {
-    title: `Learn`,
+    title: `De eerse weken na de geboorte`,
     description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
     dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
     Adipisicing.`,
@@ -26,9 +26,9 @@ const ListSection = () => (
   <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Grow your revenue</h2>
+        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Alle tips en trucs voor vaders</h2>
         <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-          Supercharge your business
+          Wat ga je leren?
         </p>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>

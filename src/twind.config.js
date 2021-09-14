@@ -6,6 +6,10 @@ export default {
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
       },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
+       }
     },
   },
 };

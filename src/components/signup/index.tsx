@@ -11,7 +11,7 @@ const SignUp = () => (
             `mt-2 pb-4 text-3xl lg:text-5xl font-bold tracking-tight text-gray-900`
           )}
         >
-          Supercharge your business
+          Koop hier het papa handboek
         </p>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
@@ -20,7 +20,7 @@ const SignUp = () => (
             <div className={tw(`border border-gray-400 rounded py-5 px-4`)}>
               <div className={tw(`mb-8`)}>
                 <h4 className={tw(`text-sm uppercase  mb-3`)}>
-                  Your full name
+                  Je volledige naam
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <input
@@ -29,13 +29,13 @@ const SignUp = () => (
                     className={tw(
                       `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
                     )}
-                    placeholder="John Fire"
+                    placeholder="Jan Doen"
                   />
                 </div>
               </div>
               <div className={tw(`mb-8`)}>
                 <h4 className={tw(`text-sm uppercase  mb-3`)}>
-                  Your email address
+                 Je email adres
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <input
@@ -44,14 +44,14 @@ const SignUp = () => (
                     className={tw(
                       `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
                     )}
-                    placeholder="john@growthhacking.com"
+                    placeholder="jan.doen@gmail.com"
                   />
                 </div>
               </div>
 
-              <div className={tw(`mb-8`)}>
+              {/* <div className={tw(`mb-8`)}>
                 <h4 className={tw(`text-sm uppercase  mb-3`)}>
-                  Your phone number
+                  Je telefoon nummer
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <input
@@ -63,31 +63,29 @@ const SignUp = () => (
                     placeholder="+(31) 612345678"
                   />
                 </div>
-              </div>
+              </div> */}
 
               <div className={tw(`mb-8`)}>
                 <h4 className={tw(`text-sm uppercase  mb-3`)}>
-                  Choose your course
+                  Kies jouw product
                 </h4>
                 <div className={tw(`flex w-full`)}>
                   <select
-                    aria-label="Enter your phonenumber"
+                    aria-label="Vul je telefoonnummer in"
                     className={tw(
                       `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
                     )}
-                    placeholder="Enter your phonenumber"
+                    placeholder="papa handboek"
                   >
-                    <option value="volvo">Advanced SEO</option>
-                    <option value="saab">Social ads</option>
-                    <option value="vw">Intro to growthhacking</option>
-                    <option value="Intro to growthhacking" selected>
-                    Intro to growthhacking
+                    <option value="papa handboek" selected>
+                    Het papa handboek
                     </option>
+          
                   </select>
                 </div>
               </div>
 
-              <Button primary modifier="mt-2">Subscribe</Button>
+              <Button primary modifier="mt-2">Betaal met iDeal</Button>
             </div>
           </div>
         </div>
