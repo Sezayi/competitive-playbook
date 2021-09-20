@@ -14,7 +14,7 @@ const SignUp = () => (
           Koop hier het papa handboek
         </p>
       </div>
-      <form method="post" action="/api/hello">
+      <form method="post" action="/api/checkout/session">
 
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
         <div className={tw(`w-full lg:w-1/2 px-8`)}>
