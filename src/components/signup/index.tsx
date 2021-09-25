@@ -2,9 +2,28 @@ import { tw } from "twind";
 import FeatureSvg from "@/constants/svg/growthhacking.svg";
 import React, { useState } from "react";
 
-
 const SignUp = () => {
+  const [email, setEmail] = React.useState<string>("");
+  const [name, setName] = React.useState<string>("");
 
+  const handleClick = async () => {
+    const res = await fetch("api/checkout", {
+      method: "POST",
+      body: JSON.stringify({
+        email: email,
+        name: name,
+      }),
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+    if (res.status !== 200) {
+      //error
+      alert(await res.text());
+    } else {
+      window.location.replace((await res.json()).url);
+    }
+  };
 
   return (
     <section className={tw(`lg:py-16 pt-16 overflow-hidden`)}>
@@ -18,7 +37,8 @@ const SignUp = () => {
             Koop hier het papa handboek
           </p>
         </div>
-        <form action="/create-checkout-session" method="POST" >
+
+        <form action="/create-checkout-session" method="POST">
           <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
             <div className={tw(`w-full lg:w-1/2 px-8`)}>
               <div className={tw(`w-full lg:w-full mt-12 lg:mt-0`)}>
@@ -36,6 +56,10 @@ const SignUp = () => {
                           `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
                         )}
                         placeholder="Jan Doen"
+                        value={name}
+                        onChange={(event) => {
+                          setName(event.currentTarget.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -52,6 +76,10 @@ const SignUp = () => {
                           `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
                         )}
                         placeholder="jan.doen@gmail.com"
+                        value={email}
+                        onChange={(event) => {
+                          setEmail(event.currentTarget.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -90,6 +118,10 @@ const SignUp = () => {
           </div>
         </form>
       </div>
+
+      <button role="link" onClick={handleClick}>
+        Betalen
+      </button>
     </section>
   );
 };
