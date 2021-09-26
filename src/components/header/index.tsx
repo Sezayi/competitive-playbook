@@ -3,10 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 // import dad from '../images/dadson.webp'
 import Button from "@/components/button";
-import Netlify from "@/constants/svg/netlify.svg";
-import Nike from "@/constants/svg/nike.svg";
-import Figma from "@/constants/svg/figma.svg";
-import Aws from "@/constants/svg/aws.svg";
+// import Netlify from "@/constants/svg/netlify.svg";
+// import Nike from "@/constants/svg/nike.svg";
+// import Figma from "@/constants/svg/figma.svg";
+// import Aws from "@/constants/svg/aws.svg";
 
 const headerStyle = css`
   background-color: #ffffff;

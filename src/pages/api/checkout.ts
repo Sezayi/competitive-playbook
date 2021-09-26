@@ -20,13 +20,13 @@ export default async function handler(
     try {
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
-        customer_email: email,
-        customer: name,
+        // customer_email: email,
+        // customer: name,
         metadata: {
           customer_email: email,
           customer: name,
         },
-        payment_method_types: ["card"],
+        payment_method_types: ["ideal"],
         line_items: [
           {
             price_data: {
@@ -48,7 +48,5 @@ export default async function handler(
     } catch (err) {
       res.status(500).json({ statusCode: 500, message: err.message });
     }
-  } else {
-    res.status(200).json({ ok: "ok" });
-  }
+  } 
 }

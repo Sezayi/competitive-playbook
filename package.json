@@ -40,6 +40,7 @@
     "next-stripe": "^1.0.0-beta.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^7.16.0",
     "react-particles-js": "3.4.1",
     "stripe": "^8.176.0",
     "twind": "0.15.4"

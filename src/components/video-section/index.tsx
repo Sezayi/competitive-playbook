@@ -12,7 +12,7 @@ const PlayButton = () => (
     aria-label="play video"
   >
     <Play className={tw(`w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0`)} />
-    <span className={tw(`ml-3`)}>Bekijk de video (5 min)</span>
+    <span className={tw(`ml-3`)}>Bekijk de video (59 sec)</span>
   </button>
 );
 

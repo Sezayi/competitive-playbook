@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
 import Page from "@/components/page";
 import SignUp from "@/components/signup";
-import Footer from "@/components/footer";
+
 
 export default function Form() {
   return (
@@ -13,7 +13,6 @@ export default function Form() {
       <main>
         <SignUp />
       </main>
-      <Footer />
     </Page>
   );
 }

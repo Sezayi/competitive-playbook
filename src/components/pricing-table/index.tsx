@@ -17,7 +17,7 @@ const PricingTable = () => (
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
           <h2 className={tw(`text-4xl lg:text-7xl font-bold text-gray-800 mb-12`)}>Klaar voor het vaderschap?</h2>
           <p className={tw(`mt-6 text-base leading-6 text-gray-500`)}>
-            Als eerst, gefeliciteerd! Je bent waarschijnlijk op deze pagina terecht gekomen omdat jezelf, of een naaste, vader wordt. Super leuk, maar ook spannend! Geen zorgen. Deze cursus helpt je op weg en levert je praktische info vor het vaderschap.
+            Als eerst, gefeliciteerd! Je bent waarschijnlijk op deze pagina terecht gekomen omdat jezelf, of een naaste, vader wordt. Super leuk, maar ook spannend! Geen zorgen. Deze cursus helpt je op weg en levert je praktische info voor het vaderschap.
           </p>
           <div className={tw(`mt-8`)}>
             <div className={tw(`flex items-center`)}>
@@ -51,7 +51,7 @@ const PricingTable = () => (
         >
           <p className={tw(`text-lg font-medium text-gray-800`)}>Bestel het handboek, inclusief cursus</p>
           <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>
-            €49,-
+            €29 
           </div>
           <Button primary modifier="mt-6">
             Nu kopen
