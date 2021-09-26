@@ -122,25 +122,6 @@ const SignUp = () => {
                   >
                     Betalen met iDEAL
                   </button>
-
-                  {/* <div className={tw(`mb-8`)}>
-                    <h4 className={tw(`text-sm uppercase  mb-3`)}>
-                      Kies jouw product
-                    </h4>
-                    <div className={tw(`flex w-full`)}>
-                      <select
-                        aria-label="product"
-                        className={tw(
-                          `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
-                        )}
-                        placeholder="papa handboek"
-                      >
-                        <option value="papa handboek" selected>
-                          Het papa handboek
-                        </option>
-                      </select>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
