@@ -63,19 +63,6 @@ const SignUp = () => {
                       Je volledige naam
                     </h4>
                     <div className={tw(`flex w-full flex-col`)}>
-                      {/* <input
-                        name="full_name"
-                        aria-label="full name"
-                        type="text"
-                        className={tw(
-                          `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
-                        )}
-                        placeholder="Jan Doen"
-                        value={name}
-                        onChange={(event) => {
-                          setName(event.currentTarget.value);
-                        }}
-                      /> */}
                       <input
                         className={tw(
                           `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
@@ -99,19 +86,6 @@ const SignUp = () => {
                       Je email adres
                     </h4>
                     <div className={tw(`flex w-full flex-col`)}>
-                      {/* <input
-                        name="email"
-                        aria-label="email address"
-                        type="text"
-                        className={tw(
-                          `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
-                        )}
-                        placeholder="jan.doen@gmail.com"
-                        value={email}
-                        onChange={(event) => {
-                          setEmail(event.currentTarget.value);
-                        }}
-                      /> */}
                       <input
                         className={tw(
                           `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
@@ -134,8 +108,8 @@ const SignUp = () => {
                       )}
                       {errors?.email?.type === "pattern" && (
                         <div className={tw(`text-red-600 py-2`)}>
-                        Je email lijkt niet het correcte format te hebben.
-                      </div>
+                          Je email lijkt niet het correcte format te hebben.
+                        </div>
                       )}
                     </div>
                   </div>
