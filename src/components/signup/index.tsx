@@ -1,8 +1,8 @@
 import { tw } from "twind";
 import FeatureSvg from "@/constants/svg/growthhacking.svg";
-import React, { useState } from "react";
-import Button from "@/components/button";
+import  { useState } from "react";
 import { useForm } from "react-hook-form";
+
 
 interface IFormInputs {
   firstName: string;
@@ -12,8 +12,8 @@ interface IFormInputs {
 }
 
 const SignUp = () => {
-  const [email, setEmail] = React.useState<string>("");
-  const [name, setName] = React.useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [name, setName] = useState<string>("");
 
   const {
     register,

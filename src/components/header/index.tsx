@@ -36,7 +36,7 @@ const spanStyle = css`
 const Header = () => (
   <header className={tw(headerStyle)}>
     <div className={tw(`lg:flex lg:flex-row`)}>
-      <div className={tw(`max-w-6xl px-14 sm:px-6 lg:py-24 lg:pl-32 2xl:py-48 lg:justify-center lg:max-w-3xl 2xl:max-w-5xl`)}>
+      <div className={tw(`max-w-6xl px-14 sm:px-6 lg:py-24 lg:pl-32 2xl:py-48 2xl:pl-56 lg:justify-center lg:max-w-3xl 2xl:max-w-5xl`)}>
         <h1
           className={tw(
             `font-sans font-bold text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl leading-snug text-gray-800`
@@ -63,7 +63,9 @@ const Header = () => (
             <Button primary>Koop het papa handboek</Button>
           </Link>
           <span className={tw(`mx-4`)}>or</span>
+          <Link href="/contact">
           <Button>Neem contact op</Button>
+          </Link>
         </div>
       </div>
       <div className={tw(`flex`)}>
