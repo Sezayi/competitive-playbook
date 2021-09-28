@@ -70,9 +70,9 @@ const Footer = () => (
               className={tw(
                 `border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`
               )}
-              placeholder="Enter your email"
+              placeholder="Vul hier je email adres in"
             />
-            <Button>Subscribe</Button>
+            <Button>Versturen</Button>
           </div>
         </div>
       </div>

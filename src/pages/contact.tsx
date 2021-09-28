@@ -5,6 +5,7 @@ import { tw } from "twind";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+
 interface IFormInputs {
   firstName: string;
   lastName: string;
@@ -50,8 +51,8 @@ export default function Contact() {
     <Page>
       <NextSeo title="Papa Handboek" description="contact" />
 
-      <div className={tw(`px-4 sm:px-6 flex justify-center items-center`)}>
-        <div className={tw(`border border-gray-400 rounded py-5 px-4 min-w-full lg:min-w-1/4`)}>
+      <div className={tw(`px-4 sm:px-6 flex justify-center items-center `)}>
+        <div className={tw(`border border-gray-400 rounded py-5 px-4 min-w-full lg:min-w-1/4 mb-48`)}>
           <main>
             <h1
               className={tw(
@@ -142,13 +143,13 @@ export default function Contact() {
                     `font-sans font-medium py-2 lg:py-4 px-8 lg:px-12 border rounded bg-dad-blue text-white border-dad-blue hover:bg-dad-blue-dark`
                   )}
                 >
-                  Submit
+                  Verzenden
                 </button>
               </div>
             </form>
           </main>
         </div>
       </div>
-    </Page>
+      </Page>
   );
 }
