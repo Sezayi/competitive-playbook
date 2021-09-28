@@ -36,10 +36,10 @@ const spanStyle = css`
 const Header = () => (
   <header className={tw(headerStyle)}>
     <div className={tw(`lg:flex lg:flex-row`)}>
-      <div className={tw(`max-w-6xl px-14 sm:px-6 lg:py-32 lg:px-32 2xl:py-64 lg:justify-center 2xl:max-w-7xl`)}>
+      <div className={tw(`max-w-6xl px-14 sm:px-6 lg:py-24 lg:pl-32 2xl:py-48 lg:justify-center lg:max-w-3xl 2xl:max-w-5xl`)}>
         <h1
           className={tw(
-            `font-sans font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-snug text-gray-800`
+            `font-sans font-bold text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl leading-snug text-gray-800`
           )}
         >
           Het eerste papa handboek
@@ -66,10 +66,10 @@ const Header = () => (
           <Button>Neem contact op</Button>
         </div>
       </div>
-      <div className={tw(`flex justify-center`)}>
+      <div className={tw(`flex`)}>
           <img
             src="/images/dadson.webp"
-            className={tw(`p-8 h-full w-full object-cover `)}
+            className={tw(`p-16 h-full w-full object-cover `)}
           />
         </div>
     </div>

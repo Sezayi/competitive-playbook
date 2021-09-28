@@ -24,7 +24,7 @@ const PricingTable = () => (
               <h3
                 className={tw(
                   `flex-shrink-0 pr-4 text-sm leading-5
-                tracking-wider font-semibold uppercase text-indigo-600`,
+                tracking-wider font-semibold uppercase text-dad-blue`,
                 )}
               >
                 Wat je allemaal krijgt

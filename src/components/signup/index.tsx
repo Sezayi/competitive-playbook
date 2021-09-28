@@ -116,7 +116,7 @@ const SignUp = () => {
 
                   <button
                     className={tw(
-                      `font-sans font-medium py-2 lg:py-4 px-8 lg:px-12 border rounded bg-indigo-600 text-white border-indigo-500 hover:bg-indigo-700`
+                      `font-sans font-medium py-2 lg:py-4 px-8 lg:px-12 border rounded bg-dad-blue text-white border-dad-blue hover:bg-dad-blue-dark`
                     )}
                     type="submit"
                   >

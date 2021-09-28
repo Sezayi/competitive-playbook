@@ -28,6 +28,7 @@
     ]
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans": "^4.5.1",
     "@fontsource/inter": "4.2.1",
     "@next-auth/prisma-adapter": "^0.5.3",
     "@prisma/client": "^2.27.0",
